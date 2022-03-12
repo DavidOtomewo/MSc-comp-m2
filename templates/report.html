@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML 5 Boilerplate</title>
+  </head>
+  <body>
+    <p><a href="/">Go Back</a></p>
+    <br>
+    <h1>Sumative 3 - Answers to questions</h1>
+	<br>
+  <br>
+  <div>
+  <h2>Task 2.1</h2>  
+<br>
+<br>
+Upon completing summative assignment 2, I took some time to analyse and see where I could make more improvements if I had the time.  Initially I created a bar chart just displaying the number of negative tweets all airlines had received.  My initial goal was to give the viewer a good representation of the airline companies that had performed worse according to the tweets received by travellers.  My biggest takeaway was that it was a one-dimensional representation, I felt it didn’t show the full representation of the subset of data I had chosen. 
+<br>
+<br>
+The data also includes positive and neutral tweets that were received by travellers.  So I decided to create a grouped bar chart showing all three values for each airline, this will give the user a clear comparison on how all three values correlate with each other, the disparity between the values can give the viewer an immediate Impression. Of course, it is up to the viewer to interpret this information.  I also added a legend to make it easer for the viewer to match the colours with each value.  The color choice was important, red for negative tweets immediately shows that it has the highest numbers across all airlines, only Virgin America has less negative tweets than positive tweets, all the other airlines have significantly more negative tweets than positive or neutral. 
+<br>
+<br>
+I also added a new graphical representation of the data, a pic chart.    I wanted to create a chart that required minimal additional explanation for the viewer, and that can be easily understood due to widespread use in business and the media. (Barcelona Fields study Centre, 2022). 
+<br>
+<br>
+Pie charts are the quickest way to represent fractional data, companies mostly use Pie charts to represent percentages.  If I had time to improve this pie chart, I would have added percentages as tool tips to each value. 
+<br>
+<br>
+As a viewer myself, my impression is that the customer service leading to all these negative tweets could be better.  Although this is only a small subset of data, it would be interesting to analyze Big data based on this source. 
+<br>
+<br>
+References  
+<br>
+<br>
+(Barcelona Fields study Centre, 2022) Available at https://www.scribbr.co.uk/referencing/harvard-website-reference/#:~:text=To%20reference%20a%20website%20in,which%20you%20accessed%20the%20website.&text=Author%20surname%2C%20initial.,Accessed%3A%20Day%20Month%20Year). 
+ </div>
+
+ <br>
+ 
+<br>
+ 
+<div>
+<h2>Task 2.2</h2>
+<br>
+<br>
+WebSocket's have standardised technology to offer a fully asynchronous connection that has real time bi –directional communication between server and browser(client).  The nature of the connection being open for a period of time, means the connection is open for attacks. 
+<br>
+<br>
+The first issue I noticed after implementing my WebSocket for the chat service, is that a client(user) can send any information through the WebSocket connection.  Therefore, I decided to start by adding some client input validation.  This can prevent attacks like OS, SQL, Blind SQL and many more. (Dabko Kovacic, 2021)  
+<br>
+<br>
+To validate clientside input, I used an if statement to check if the user was a particular person, if the person doesn’t match that name, then nothing will be sent to the server.  Users who have access to the system will be notified and invited to use, of which they will receive notification through secure channels. 
+<br>
+<br>
+My second security feature was server side validation.  This means messages received on the client side should always be processed as data before being assigned to the DOM(document object model).  I used a try/catch block along with JSON.parse to catch data types that was not a JSON string. 
+<br>
+<br>
+I also used wss://, which is a much more safer protocol than ws:// which prevents things like man in the middle attacks. (Dabko Kovacic, 2021) 
+<br>
+<br>
+I attempted to add rate limiting, but due this being my lack of understanding,  I defintelely need more time to implement this.  It can be extemely important as a security feature as it protects against bad bots, scrapers, clients who hog the connection without knowing or a malfunctioning client that can lead to a DoS attack.  Therefore limited the time of the client connection can be an adavantage. 
+<br>
+<br>
+ </div>
+
+ <br>
+ <br>
+
+<div>
+<h2>Task 2.3</h2>
+<br>
+<br>
+My biggest challenge was trying to get all three pages into one flask application.  I had numerous errors with integrating the WebSocket application.  I also had issues with linking multiple pages on one flask application, I tried to use url_for after reading the documentation but it still didn’t work.  In the end I managed to achieve this by looking at the doumtnetation in further detail, it was just a simple syntax error that I was missing.  To access the routes wothin the python flask I was trying to use URL_for, I eventually worked out that the best implementation is to use href="/(route name)".  This worked well, allowing me to use links to navigate between the pages.
+<br>
+<br>
+This assignment has given me the urge to learn more HTML, CSS and JavaScript.  I think these programming languages will always play an important role in web app development.
+<br>
+<br>
+References  
+<br>
+<br>
+(Dabko Kovacic, 2021) Available at https://brightsec.com/blog/websocket-security-top-vulnerabilities/#client-input-validation  </div>
+<br>
+<br>
+</div>
+
+</body>
+</html>

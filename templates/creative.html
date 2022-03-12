@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bar Chart</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src = "/static/js/barChart.js"></script>
+</head>
+<style>
+    .hoverChange:hover{
+        opacity: 0.66;
+    }
+    text{
+        font-family: sans-serif;
+
+    }
+
+    .tool-tip {
+    border: 1px solid red;
+    padding: 20px;
+    }
+
+
+
+</style>
+<body>
+    <p><a href="/">Go Back</a></p>
+    <div id= "Legend">
+    </div>
+    <div id="BarChart-Container"></div>
+    <h5 style="text-align: center;">A Bar chart showing the number of negative, positive and neutral tweets for each majpr US airline in 2015
+    categories  depending <br> on the tweet.  The data used for this bar chart comes from <a href="https://www.kaggle.com/crowdflower/twitter-airline-sentiment">Kaggle - twitter airline sentiment</a></h5>
+    <div id = "Pie Chart Container"></div>
+
+</body>
+</html>
